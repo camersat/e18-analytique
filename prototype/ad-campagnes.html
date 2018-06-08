@@ -48,7 +48,7 @@
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
-                            <a class="js-arrow" href="dashboard-ad.html">
+                            <a class="js-arrow" href="ad-campagnes.html">
                                 <i class="fas fa-tachometer-alt"></i>Tableau de bord</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                             </ul>
@@ -61,9 +61,11 @@
                             <a class="js-arrow" href="ad-stats.html">
                                 <i class="fas fa-chart-area"></i>Statistiques</a>
                         </li>
-                        <li>
+                        <li class="active has-sub">
                             <a class="js-arrow" href="ad-campagnes.html">
                                 <i class="fas fa-images  "></i>Campagnes publicitaires</a>
+								<ul class="list-unstyled navbar__sub-list js-sub-list">
+                            </ul>
                         </li>
                         <li>
                             <a class="js-arrow" href="ad-profils.html">
@@ -124,12 +126,109 @@
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
-                TODO
+                <p>CREATION D'UNE  CAMPAGNE PUBLICITAIRE</p>
+							
+				 <div class="main-content">
+				 	
+                <table class="table">
+			
+				<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-login">
+                <form id="register-form" action="ad-camapagnes.html" method="post" role="form" style="display: none;">
+									<div class="form-group">
+										<input type="text"  class="form-control" placeholder="Nom de la campagne" value="">
+									</div>
+                                    <div class="form-group">
+										<input type="number" class="form-control" pattern="(d{3})([.])(d{2})" placeholder="Budget($)" value="">
+									</div>
+                                
+									<div class="form-group">
+										<input type="date" class="form-control" placeholder="date de Debut" value="">
+									</div>
+									<div class="form-group">
+										<input type="date" class="form-control" placeholder="date de Fin" value="">
+                                     </div>
+									<div class="funkyradio">
+										<div class="funkyradio-success">
+											<input type="radio" name="radio" id="radio1" checked/>
+											<label for="radio1">Actif</label>
+										</div>
+										<div class="funkyradio-success">
+											<input type="radio" name="radio" id="radio2"/>
+											<label for="radio2">Non Actif</label>
+										</div>
+										</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="S'enregistrer">
+											</div>
+										</div>
+									</div>
+								</form> >
+								
+								</div>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				<!-- Jquery JS
+				<form id="register-form" action="ad-camapagnes.html" method="post" role="form" style="display: none;">
+									<div class="form-group">
+										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Nom d'utilisateur" value="">
+									</div>
+									<div class="form-group">
+										<input type="text" name="name" id="name" tabindex="1" class="form-control" placeholder="Prenom" value="">
+									</div>
+									<div class="form-group">
+										<input type="text" name="lastname" id="lastname" tabindex="1" class="form-control" placeholder="Nom" value="">
+									</div>
+									<div class="form-group">
+										<input type="text" name="adress" id="adress" tabindex="1" class="form-control" placeholder="Adresse Civique" value="">
+									</div>
+									<div class="form-group">
+										<input type="text" name="ville" id="ville" tabindex="1" class="form-control" placeholder="Ville" value="">
+									</div>
+									<div class="form-group">
+										<input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Adresse Courriel" value="">
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Mot de passe">
+									</div>
+									<div class="form-group">
+										<input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirmer le mot de passe">
+									</div>
+									<div class="funkyradio">
+										<div class="funkyradio-success">
+											<input type="radio" name="radio" id="radio1" checked/>
+											<label for="radio1">Administrateur siteweb</label>
+										</div>
+										<div class="funkyradio-success">
+											<input type="radio" name="radio" id="radio2"/>
+											<label for="radio2">Administrateur publicité</label>
+										</div>
+										</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="S'enregistrer">
+											</div>
+										</div>
+									</div>
+								</form> > -->
+				
+				
             </div>
             <!-- END MAIN CONTENT-->
             <!-- END PAGE CONTAINER-->
         </div>
 
+		
+		
+		
     </div>
 
     <!-- Jquery JS-->
